@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "main" ]; then
+  echo "🚫 mainブランチへの直接pushは禁止です。別ブランチを切ってPR運用にしてください。"
+  exit 1
+fi

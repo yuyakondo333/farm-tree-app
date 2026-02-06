@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "🔍 Type checking..."
+pnpm typecheck || exit 1
