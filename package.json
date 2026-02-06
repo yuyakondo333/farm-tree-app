@@ -1,0 +1,9 @@
+{
+  "name": "farm-tree-app",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "dev": "pnpm -r dev"
+  }
+}
